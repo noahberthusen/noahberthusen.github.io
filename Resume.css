@@ -1,0 +1,82 @@
+* {
+	font-family: "Ludica Console", Monaco, monospace;
+}
+.welcome {
+	background-color: white;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.welcome > .content {
+	max-width: 50%;
+	font-weight: 400px;
+}
+.content > h2 {
+	border: 3px solid black;
+	padding: 30px;
+}
+.content > h2:hover {
+	border: 6px dotted black;
+	padding: 27px;
+}
+.content > h4 {
+	text-align: center;
+	margin-top: 0;
+	line-height: 0.5;
+}
+.row > .col-md-4 {
+	border: 2px solid gray;
+}
+.list {
+	list-style-type: none;
+}
+.row {
+	line-height: 2;
+}
+#title, h3 {
+	font-weight: bold;
+}
+#main {
+	display: flex;
+}
+#icon {
+	position: absolute;
+	bottom: 30px;
+	color: black;
+}
+#icon:hover {
+	font-size: 1.09em;
+	bottom: 28px;
+	color: black;
+}
+a {
+	color: black;
+}
+a:hover {
+	color: #3B3B3B;
+}
+.location {
+	text-align: right;
+}
+.rightlist {
+	float: right;
+}
+.separate {
+	border-right: 2px dotted black;
+}
+.page {
+	background-color: #F0FFFF;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.information {
+	width: 90%;
+}
+.contact {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 18px;
+}
