@@ -8,22 +8,30 @@
 	align-items: center;
 	justify-content: center;
 }
-.welcome > .content {
+.welcome > .content{
 	max-width: 50%;
 	font-weight: 400px;
 }
-.content > h2 {
+.content > a h2{
 	border: 3px solid black;
+	/*border-radius: 7px;*/
 	padding: 30px;
 }
-.content > h2:hover {
+.content > a h2:hover {
 	border: 6px dotted black;
+	border-radius: 0;
 	padding: 27px;
+}
+.content > a:hover {
+	text-decoration: none;
 }
 .content > h4 {
 	text-align: center;
 	margin-top: 0;
+	margin-left: auto;
 	line-height: 0.5;
+	letter-spacing: 5px;
+	margin-left: 5px;
 }
 .row > .col-md-4 {
 	border: 2px solid gray;
@@ -66,7 +74,7 @@ a:hover {
 	border-right: 2px dotted black;
 }
 .page {
-	background-color: #F0FFFF;
+	background-color: #BFEFFF;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -79,4 +87,46 @@ a:hover {
 	margin-top: 60px;
 	text-align: center;
 	font-size: 18px;
+}
+.modal-dialog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 85vh;
+}
+.modal {
+	padding: 0;
+}
+.modal-content {
+	width: 350px;
+	height: 550px;
+	border: none;
+	background-color: #BFEFFF;
+	box-shadow: 20px 20px;
+	border-radius: 0px;
+	margin: 0;
+}
+.modal-header {
+	border: none;
+}
+.modal-backdrop {
+	background-color: white;
+}
+
+.modal-content > a {
+	color: white;
+	position: absolute;
+	margin-left: 330px;
+	text-shadow: none;
+	opacity: 1;
+}
+.modal-content > a:hover {
+	text-decoration: none;
+	color: white;
+	opacity: 0.75;
+}
+.modal-body > img {
+	height: 75px;
+	position: absolute;
+	margin-left: 140px;
 }
