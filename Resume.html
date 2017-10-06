@@ -5,8 +5,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="Resume.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$("#icon").click(function() {
@@ -20,7 +20,20 @@
 <body>
 	<div class="welcome container">
 		<div class="content">
-			<h2>NOAH BERTHUSEN</h2>
+			<a data-toggle="modal" data-target="#myModal"><h2>NOAH BERTHUSEN</h2></a>
+			<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+					<a class="close" data-dismiss="modal">x</a>
+					<img src="headshot2.jpg" class="img-responsive">
+					<div class="modal-body">
+						<h4 style="font-weight:bold">About Me</h4>
+						<p>Hello! My name is Noah Berthusen and I'm studying to be a Software Engineer at Iowa State University. I'm interested in many areas of coding, and currently I'm working on website development and design. I can bring a drive and determination that would allow me to be successful at your company. Feel free to contact me with any questions.</p>
+						<img src="signature.png" class="img-responsive">
+					</div>
+		    </div>
+		  </div>
+		</div>
 			<h4>SOFTWARE ENGINEER</h4>
 		</div>
 		<div id="icon">
