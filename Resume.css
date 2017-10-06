@@ -130,3 +130,6 @@ a:hover {
 	position: absolute;
 	margin-left: 140px;
 }
+.modal-body > h4 {
+	font-weight:bold;
+}
