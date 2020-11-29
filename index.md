@@ -13,12 +13,12 @@
 
 # Noah&nbsp;Berthusen
 
-```bio-remove
-<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/hero-image.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>```
 
-I’m a second-year Ph.D. student in unknown discipline, advised by [unknown professor](https://example.com/). I am interested in some unknown specialized sub-area.
+<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-Prior to joining [unknown current university](https://example.com/), I obtained my bachelor’s degree from [unknown previous university](https://example.com/).
+I’m a fourth-year undergraduate student in Software Engineering at Iowa State University. 
+
+I am seeking acceptance to a Ph.D. program in computer science with a focus in quantum computation and quantum complexity.
 
 I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span>.
 
@@ -31,7 +31,7 @@ Change the encoding for your own email address.
 <script type="application/javascript">
 window.setTimeout(function ()
 {
-var addr = [115,111,109,101,111,110,101,64,101,120,97,109,112,108,101,46,99,111,109];
+var addr = [110, 102, 98, 49, 64, 105, 97, 115, 116, 97, 116, 101, 46, 101, 100, 117];
 addr = String.fromCharCode.apply(String, addr);
 var eml = document.getElementById('_eml');
 eml.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
@@ -40,7 +40,6 @@ eml.removeAttribute('class');
 </script>
 [bio]-->
 
-This is an example personal homepage built with [bio-site](https://github.com/GeeLaw/bio-site). It features simplicity and integration with BibTeX.
 
 ## Research
 
@@ -83,16 +82,31 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ```blog-bib
 @misc{vqe-talk,
-  author = {Quantum computing reading group at ISU},
+  biosite_extra = {November 2020. Quantum computing reading group at ISU.},
   title = {Introduction to the variational quantum eigensolver method},
   biosite_url = {https://noahberthusen.github.io/assets/files/VQE.pdf}
 }
 
 @misc{benewop,
-  author = {Oak Ridge National Lab SULI poster presentation},
+  author = {August 2020. Oak Ridge National Lab SULI poster presentation.},
   title = {Benchmarking Noise Extrapolation on a Quantum Chip with OpenPulse},
+  biosite_url = {https://noahberthusen.github.io/assets/files/Poster_benewop.pdf},
   biosite_venue = {GitHub},
   biosite_demo = {https://github.com/noahberthusen/benewop-benchmarking}
+}
+
+@misc{ncur,
+  biosite_extra = {April 2020. Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research (NCUR) at the Montana State University, Bozeman, MT
+ (cancelled due to Covid-19). },
+  title = {Quantum variational algorithms apporach to solve the strongly correlated materials challenge},
+  biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632},
+  biosite_venue = {GitHub},
+  biosite_demo = {https://github.com/noahberthusen/qc_vqe}
+}
+
+@misc{schrodinger,
+  author = {March 2018. Iowa State Honors Research Symposium.},
+  title = {Machine Learning and the Schrödinger equation},
 }
 
 

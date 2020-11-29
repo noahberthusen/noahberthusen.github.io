@@ -77,7 +77,7 @@ function RenderAuthors(entry, result)
     {
         result.push('Anonymous');
     }
-    else if (realpeople.length === 1)
+    if (realpeople.length === 1)
     {
         result.push(realpeople[0]);
         if (etal)
