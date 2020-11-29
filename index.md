@@ -13,7 +13,6 @@
 
 # Noah&nbsp;Berthusen
 
-
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
 I’m a fourth-year undergraduate student in Software Engineering at Iowa State University. 
@@ -82,13 +81,13 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ```blog-bib
 @misc{vqe-talk,
-  biosite_extra = {November 2020. Quantum computing reading group at ISU.},
+  biosite_extra = {November 2020. Talk presented at Quantum computing reading group at ISU.},
   title = {Introduction to the variational quantum eigensolver method},
   biosite_url = {https://noahberthusen.github.io/assets/files/VQE.pdf}
 }
 
 @misc{benewop,
-  author = {August 2020. Oak Ridge National Lab SULI poster presentation.},
+  biosite_extra = {August 2020. Oak Ridge National Lab SULI poster presentation.},
   title = {Benchmarking Noise Extrapolation on a Quantum Chip with OpenPulse},
   biosite_url = {https://noahberthusen.github.io/assets/files/Poster_benewop.pdf},
   biosite_venue = {GitHub},
@@ -96,7 +95,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{ncur,
-  biosite_extra = {April 2020. Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research (NCUR) at the Montana State University, Bozeman, MT
+  biosite_extra = {April 2020. Oral presentation at Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research (NCUR) at the Montana State University, Bozeman, MT
  (cancelled due to Covid-19). },
   title = {Quantum variational algorithms apporach to solve the strongly correlated materials challenge},
   biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632},
@@ -105,7 +104,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{schrodinger,
-  author = {March 2018. Iowa State Honors Research Symposium.},
+  biosite_extra = {March 2018. Poster presented Iowa State Honors Research Symposium.},
   title = {Machine Learning and the Schrödinger equation},
 }
 
