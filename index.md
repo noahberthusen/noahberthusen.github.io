@@ -17,7 +17,7 @@
 
 I’m a fourth-year undergraduate student in Software Engineering at Iowa State University. 
 
-I am seeking acceptance to a Ph.D. program in computer science with a focus in quantum computation and quantum complexity.
+I will be attending the University of Maryland beginning Fall 2021 to start a Ph.D. in computer science with a focus in quantum computation and quantum complexity.
 
 I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span>.
 
@@ -80,6 +80,13 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 ## Talks and Presentations
 
 ```blog-bib
+@misc{vqe-comparison,
+	biosite_extra = {April 2021. Poster presentation for National Conferenc eon Undergraduate Research (NCUR).},
+	title = {Design of Quantum-classical Computing Hybrid Algorithms for Materials Simulation},
+	biosite_url = {https://noahberthusen.github.io/assets/files/VQE_comparison.pdf}
+}
+
+
 @misc{vqe-talk,
   biosite_extra = {November 2020. Talk presented at Quantum computing reading group at ISU.},
   title = {Introduction to the variational quantum eigensolver method},
@@ -95,7 +102,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{ncur,
-  biosite_extra = {April 2020. Oral presentation at Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research (NCUR) at the Montana State University, Bozeman, MT
+  biosite_extra = {April 2020. Oral presentation at Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research at the Montana State University, Bozeman, MT
  (cancelled due to Covid-19). },
   title = {Quantum variational algorithms apporach to solve the strongly correlated materials challenge},
   biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632},
