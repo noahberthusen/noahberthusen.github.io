@@ -15,11 +15,11 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-I’m a fourth-year undergraduate student in Software Engineering at Iowa State University. 
+I'm a first-year PhD student in computer science at the University of Maryland. I hope to continue studying quantum computing and quantum information.
 
-I will be attending the University of Maryland beginning Fall 2021 to start a Ph.D. in computer science with a focus in quantum computation and quantum complexity.
+I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
-I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span>.
+I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span> or on <a href="https://www.linkedin.com/in/noah-berthusen-1a141a129/">LinkedIn</a>.
 
 ```bio-remove
 Below we use a simple mechanism to mitigate email address reaping.
@@ -30,7 +30,11 @@ Change the encoding for your own email address.
 <script type="application/javascript">
 window.setTimeout(function ()
 {
-var addr = [110, 102, 98, 49, 64, 105, 97, 115, 116, 97, 116, 101, 46, 101, 100, 117];
+var addr = [
+  110, 102,  98, 101, 114,
+  116,  64, 117, 109, 100,
+   46, 101, 100, 117
+];
 addr = String.fromCharCode.apply(String, addr);
 var eml = document.getElementById('_eml');
 eml.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
@@ -81,7 +85,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ```blog-bib
 @misc{vqe-comparison,
-	biosite_extra = {April 2021. Poster presentation for National Conferenc eon Undergraduate Research (NCUR).},
+	biosite_extra = {April 2021. Poster presentation for National Conference on Undergraduate Research (NCUR).},
 	title = {Design of Quantum-classical Computing Hybrid Algorithms for Materials Simulation},
 	biosite_url = {https://noahberthusen.github.io/assets/files/VQE_comparison.pdf}
 }
