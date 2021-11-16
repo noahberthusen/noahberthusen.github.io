@@ -15,7 +15,7 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-I'm a first-year PhD student in computer science at the University of Maryland. I hope to continue studying quantum computing and quantum information.
+I am a first-year PhD student in computer science at the University of Maryland studying quantum computing and quantum information.
 
 I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
@@ -44,7 +44,9 @@ eml.removeAttribute('class');
 [bio]-->
 
 
-## Research
+## Publications
+
+<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/crystal_field.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
 ```blog-bib
 
@@ -67,6 +69,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 
+
 @misc{vqe,
   author = {Feng Zhang and Niladri Gomes, and Noah F. Berthusen and Peter P. Orth and Cai-Zhuang Wang and Kai-Ming Ho, and Yong-Xin Yao},
   title = {Shallow-circuit variational quantum eigensolver based on symmetry-inspired Hilbert space partitioning for quantum chemical calculations},
@@ -83,7 +86,20 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ## Talks and Presentations
 
+<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/rl.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
+
 ```blog-bib
+
+@misc{circuit_compression,
+	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. See also the companion paper here. },
+	title = {Efficient quantum circuit compression using Reinforcement Learning},
+	biosite_venue = {GitHub},
+	biosite_demo = {https://github.com/noahberthusen/circuit_rl},
+	biosite_url = {https://noahberthusen.github.io/assets/files/rl_poster.pdf},
+	author = {}
+
+}
+
 @misc{vqe-comparison,
 	biosite_extra = {April 2021. Poster presentation for National Conference on Undergraduate Research (NCUR).},
 	title = {Design of Quantum-classical Computing Hybrid Algorithms for Materials Simulation},
