@@ -15,7 +15,7 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-I am a first-year PhD student in computer science at the University of Maryland studying quantum computing and quantum information.
+I'm a first-year PhD student in computer science at the University of Maryland studying quantum computing and quantum information.
 
 I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
@@ -46,7 +46,7 @@ eml.removeAttribute('class');
 
 ## Publications
 
-<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/crystal_field.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
+<figure class="gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/crystal_field.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
 ```blog-bib
 
@@ -59,6 +59,12 @@ It is possible to have multiple BibTeX blocks, which will be rendered independen
 To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
+
+@misc{vtc,
+  author = {Noah F. Berthusen and Tha&iacute;s V. Trevisan and Tom Iadecola and Peter P. Orth},
+  title = {Quantum dynamics simulations beyond the coherence time on NISQ hardware by variational Trotter compression},
+  biosite_url = {https://arxiv.org/abs/2112.12654},
+ }
 
 @misc{ml,
   author = {Noah F. Berthusen and Yuriy Sizyuk and Mathias S. Scheurer and Peter P. Orth},
@@ -96,8 +102,6 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 	biosite_venue = {GitHub},
 	biosite_demo = {https://github.com/noahberthusen/circuit_rl},
 	biosite_url = {https://noahberthusen.github.io/assets/files/rl_poster.pdf},
-	author = {}
-
 }
 
 @misc{vqe-comparison,
