@@ -15,7 +15,7 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-I'm a first-year PhD student in computer science at the University of Maryland studying quantum computing and quantum information.
+I'm a second year PhD student in computer science at the University of Maryland studying quantum computing and quantum error correction.
 
 I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
@@ -46,7 +46,6 @@ eml.removeAttribute('class');
 
 ## Publications
 
-<figure class="gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/crystal_field.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
 ```blog-bib
 
@@ -60,10 +59,26 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{rl,
+  author = {M. Sohaib Alam and Noah F. Berthusen and Peter P. Orth},
+  title = {Quantum Logic Gate Synthesis as a Markov Decision Process},
+  biosite_url = {https://arxiv.org/abs/1912.12002},
+  biosite_venue = {GitHub},
+  biosite_demo = {https://github.com/Orth-Research/circuit_rl}
+}
+
+@misc{impurity,
+  author = {Anirban Mukherjee and Noah F. Berthusen and João C. Getelina and Peter P. Orth and Yong-Xin Yao},
+  title = {Comparative study of adaptive variational quantum eigensolvers for multi-orbital impurity models},
+  biosite_url = {https://arxiv.org/abs/2203.06745}
+}
+
 @misc{vtc,
   author = {Noah F. Berthusen and Tha&iacute;s V. Trevisan and Tom Iadecola and Peter P. Orth},
   title = {Quantum dynamics simulations beyond the coherence time on NISQ hardware by variational Trotter compression},
   biosite_url = {https://arxiv.org/abs/2112.12654},
+  bitsite_venue = {GitHub},
+  biosite_demo = {https://gitlab.com/QANED/heis_dynamics}
  }
 
 @misc{ml,
@@ -73,8 +88,6 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
   biosite_venue = {GitHub},
   biosite_demo = {https://github.com/Orth-Research/ml_cr}
 }
-
-
 
 @misc{vqe,
   author = {Feng Zhang and Niladri Gomes, and Noah F. Berthusen and Peter P. Orth and Cai-Zhuang Wang and Kai-Ming Ho, and Yong-Xin Yao},
@@ -92,7 +105,6 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ## Talks and Presentations
 
-<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/rl.png" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
 ```blog-bib
 
