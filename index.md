@@ -74,7 +74,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{vtc,
-  author = {Noah F. Berthusen and Tha&iacute;s V. Trevisan and Tom Iadecola and Peter P. Orth},
+  author = {Noah F. Berthusen and Thaís V. Trevisan and Tom Iadecola and Peter P. Orth},
   title = {Quantum dynamics simulations beyond the coherence time on NISQ hardware by variational Trotter compression},
   biosite_url = {https://arxiv.org/abs/2112.12654},
   bitsite_venue = {GitHub},
@@ -109,7 +109,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 ```blog-bib
 
 @misc{circuit_compression,
-	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. See also the companion paper here. },
+	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. See also the companion paper <a href="https://noahberthusen.github.io/assets/files/circuit_compression.pdf">here</a>. },
 	title = {Efficient quantum circuit compression using Reinforcement Learning},
 	biosite_venue = {GitHub},
 	biosite_demo = {https://github.com/noahberthusen/circuit_rl},
