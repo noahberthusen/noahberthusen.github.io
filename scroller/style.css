@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700&display=swap');
+
+body {
+    /* background-color: rgb(245, 244, 241); */
+    background-color: white;
+    overflow-x: hidden;
+    font-family: "Domine";
+}
+
+#sections {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    top: 60px;
+    z-index: 90;
+    margin-right: 70px;
+    /* margin-left: 150px; */
+    margin-left: 12vw;
+}
+
+.categoryLegend {
+    font-family: "Domine";
+}
+
+.step {
+    /* margin-bottom: 100px; */
+    height: 700px;
+    font-family: "Domine";
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: justify;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: right;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#graphic {
+    margin: auto;
+    /* width: 1500px; */
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+}
+
+#vis {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: 0;
+    /* height: 1000px;
+    width: 1000px; */
+}
+
+/* .tick line {
+    stroke: 'red'
+} */
+
+#tooltip, #info-tooltip {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* transition: opacity 0.3s, visibility 0.3s; */
+    font-family: "Domine";
+    max-width: 400px;
+    z-index: 100;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+svg circle:hover{
+    cursor: pointer;
+}
+
+.question-container {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+a {
+    color: rgb(221, 0, 255);
+    text-decoration: none;
+}
+
+/* img {
+    display: none;
+} */
+
+/* svg {
+    border: 1px black solid;
+} */
+
+.tooltip.special {
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip.special::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust the distance from the hovered word */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 1.4em;
+    /* transition: opacity 0.3s, visibility 0.3s; */
+    /* text-align: center; */
+    max-width: 400px;
+    width: max-content;
+  }
+  
+  .tooltip.special:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .special {
+    display: inline-block;
+    background-color: #F9D949; /* Background color for the word */
+    /* color: rgb(245, 244, 241);  */
+    padding: 4px 8px;
+    border-radius: 20px; /* Adjust the border radius to match the tooltip */
+  }
+  
+
+  footer {
+    margin-top: 20px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin: 10px 0;
+  }
+  
+  ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+  }
+  
+  ol li a {
+    text-decoration: none;
+  }
+  
+  ol li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footnote-text {
+    font-size: 0.7em;
+  }
+  
+  .button {
+    /* display: none; */
+    /* position: fixed; */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button.show {
+    display: block;
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .container button {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+    cursor: pointer;
+  }

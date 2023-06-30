@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <title>Partial Syndrome Measurement for Hypergraph Product Codes</title>
+
+</head>
+
+
+<body>
+   
+    <div id="graphic">
+        <div id="tooltip"></div>
+        <div id="info-tooltip"></div>
+        <div id="sections">
+            <section class="step" style="height: 900px;">
+                <div class="title"></div>
+                <br><br>
+                <h1>Partial Syndrome Measurement for Hypergraph Product Codes</h1>
+                <p>
+                This article is meant to be a less technical summary of my paper, 
+                <a href="" >Partial Syndrome Measurement for Hypergraph Product Codes</a>, as well as a cool visualization of decoders. 
+                Skip to the <a href="#the-end">end</a> if you just want to play with the small-set flip decoder. <br><br>
+                
+                Before we introduce quantum error correction, let's start with some classical error correction. 
+                What exactly is error correction and why would you need it? When sending information over a noisy
+                channel, it's possible that the message could be corrupted in some way before it reaches the receiver.
+                Error correction let's us redundantly encode the message in such a way that the receiver can recover
+                the original message, even in the presence of errors. <br><br>
+
+                For much the same reason, we need quantum error correction to be able to do any sizable computations
+                on noisy quantum computers.                
+                </p>
+                
+            </section>
+            <section class="step" style="height: 700px;">
+                <p>
+                Formally, an error correcting code is a transformation that takes messages of length $k$ and maps them to messages of length $n$. 
+                If it can correct $\lfloor \frac{d-1}{2} \rfloor$ errors, then we say that such a code is a classical $[n,k,d]$ code. <br><br>
+                
+                Here we have a $[7,4,3]$ classical error correcting code as represented by a bipartite Tanner graph. 
+                It redundantly encodes messages of length 4 into ones of length 7 and can tolerate $\lfloor \frac{3-1}{2} \rfloor = 1$ error on any of the bits. <br><br>
+
+                <!-- We are able to perform error correction because we have information  -->
+                Valid messages have the property that all of the checks are satisfied. If we receive a message where some of the 
+                <span class="tooltip special" data-tooltip='The syndrome is the information telling us which check nodes are satisfied and which are unsatisfied. For codes like this one, a check is satisfied if it has an even number of "errors" connected to it.'>syndrome</span> 
+                is unsatisfied, then we know that an error has occurred that we need to correct. <br><br>
+                
+                Throughout the article, the interactive illustration will update to go along with the text. Try exploring by hovering and clicking, or learn how to use it by hovering over the question mark in the upper right corner.
+                <!-- Hover over the nodes to see the connections in the code. Click the bit nodes to toggle an error and update the syndrome. -->
+                </p>
+            </section>
+            <section class="step" style="height: 650px;">
+                <h2>Flip Decoding</h2>
+                <p>
+                Classical linear codes like the $[7,4,3]$ code can be
+                <span class="tooltip special" data-tooltip="After receiving a potentially corrupted message, we want to figure out what the original message was. We do this by using the received message as well as the syndrome to guess which bits have errors, and subsequently correct them.">decoded</span> 
+                with the flip decoder, a suprisingly simple procedure. This decoder is the basis for 
+                the quantum decoder we look at later. The algorithm is as follows:
+                    
+                <blockquote>
+                    <ul>
+                        <li>Flip a bit if it will result in a greater total number of satisfied checks.</li>
+                        <li>Repeat until a codeword is reached or all flips increase the syndrome weight.</li>
+                    </ul>
+                </blockquote>
+
+                That's it. It's kind of amazing that this algorithm works at all, and yet it is guaranteed to succeed for codes made from
+                sufficiently large expander graphs.
+                </p>
+                <p>
+                The way to read this chart is that by flipping a given bit, the bar indicates whether resulting the syndrome 
+                <span class="tooltip special" data-tooltip="The weight of a syndrome is the number of unsatisfied checks. We can also talk about the weight of an error, which is just the number of errors.">weight</span>
+                will be larger (have more unsatisfied checks) or smaller (haver fewer unsatisfied checks).
+                <!-- Due to the properties of the error correcting code, valid messages will have all satisfied checks. -->
+                <!-- Try adding an error and see if the flip decoding algorithm corrects it. -->
+                </p>
+            </section>
+            <section class="step">
+                <h2>Masking</h2>
+                The main concept the paper introduces is that of masking. It comes from the question: what if 
+                we didn't use didn't use the information from every check node when doing error correction? <br><br>
+
+                For classical error correction, there isn't really a practical need to do this; however, as we will briefly argue
+                in the quantum case, masking could potentially be useful for certain code types and quantum computing architectures. <br><br>
+
+                By masking check nodes, we are changing what information is available to 
+                the flip decoder. In some cases, a mask has no effect on the decisions made by the decoder, but in extreme cases a mask 
+                could completely hide errors. This is reflected in the visualization by the bars changing size, even without adding any errors.<br><br>
+                
+                Whether or not quantum error correction is possible with masking is the main question of the paper.
+            </section>
+            <section class="step" style="height: 800px;">
+                <h2>Quantum Error Correction</h2>
+                Without going into the quantum mechanics, there are now two types of error that can affect the quantum bits (qubits), X- and Z-type errors. As such, we need quantum codes that can diagnose and correct both types.
+                <br><br>
+
+                The codes we mainly focus on in the paper are hypergraph product codes. This construction takes two classical codes and creates a quantum code by essentially taking the graph product of them. Intuitively, this means that, when the quantum code is laid out as shown, each row and each column is a copy of the underlying classical code. 
+                <br><br>
+
+                Taking the hypergraph product of two copies of the $[7,4,3]$ classical code above yields the $[[58,16,3]]$ quantum code here. <br><br>
+
+                For hypergraph product codes, the X- and Z-type errors can be corrected independently. When we use two copies of the same classical code like we do here and in the paper, they have the same performance. So we only look at correcting X-type errors.
+                <!-- Decoding quantum codes is a more difficult task, in general, since we don't have direct access to the quantum message or state -->
+
+            </section>
+            <section class="step" style="height: 1000px">
+                <h2>Small-Set Flip Decoding</h2>
+                To decode hypergraph product codes, we can use the small-set flip (SSF) decoder, which is inspired by the flip
+                decoder we used for classical expander codes. <br><br>
+
+                The idea for the flip decoder was to look for bit flips that decrease the syndrome weight. Expanding this idea slightly
+                gives us the following algorithm:
+
+                <blockquote>
+                    <ul>
+                        <li>In the
+                            <span class="tooltip special" data-tooltip="The support of a qubit or check is the set of checks or qubits, respectively, that it is connected to in the code. Hovering over a node highlights the other nodes in its support.">support</span> 
+                            of each X-type check, find the smallest set of qubits which, when flipped, 
+                            decreases the syndrome weight by the most.
+                        </li>
+                        <li>Rank all X-type checks and perform the best small-set flip.</li>
+                        <li>Repeat until zero syndrome is reached or all flips increase the syndrome weight.</li>
+                    </ul>
+                </blockquote>
+                The SSF decoder has a number of attractive properties, such as being able to tolerate large random errors, as well as
+                noise in the syndrome. <br><br>
+                <!-- <hr> -->
+                The X-type checks are colored according to the relative syndrome weight difference of the best small-set flip for that check. This is calculated by taking the resulting syndrome weight difference and dividing by the number of flips in the correction.<br><br>
+                <!-- When hovering over an X-type check, any edge(s) to qubit(s) indicate the best small-set to flip for that check. Clicking it applies the specified correction. <br><br> -->
+                <svg id = 'legend' width = '400px' height = '200px'></svg>
+            </section>
+            <section class="step" style="height: 800px;">
+                <!-- <h2>masking</h2> -->
+                Just as we did with the classical code, we can mask some (Z-type) checks and see how it affects the small-set flip decoder. <br><br>
+
+                For quantum codes, there is actually practical reason you might want to mask checks. To determine whether a check is satisfied 
+                or unsatisfied, we have to measure it by interacting with the qubits in its support. For some quantum computing architectures, 
+                like nuclear magnetic resonance or superconducting qubits, qubits can only interact with their 2D nearest neighbors, which
+                poses a problem if the qubits we want to interact with are far apart. <br><br>
+                
+                The basic idea, and the underlying motivation for this paper, is that during error correction we use the checks whose qubits are 
+                far apart less frequently than the checks whose qubits are close together. That is, some checks have a mask on them during decoding.
+                Doing this has the possibility of making quantum computation on 2D-local architectures easier.
+                <br><br>
+
+                The first step is seeing if error correction is even possible when we don't use every check while decoding.
+            </section>
+            <section class="step" style="height: 600px;">
+                <!-- So now with all of the background out of the way, what did we show in the paper? <br><br> -->
+
+                In the paper, we investigate exactly that question.
+                We looked at a family of hypergraph product codes of up to 8,784 qubits and ran simulations of a multi-round decoding protocol
+                using the SSF decoder. The protocol consisted of doing several rounds of masked error correction, followed by rounds with a 
+                smaller mask or no mask at all.
+                <br><br>
+
+                We found evidence to suggest that error correction is possible (although with poor performance) even if you randomly mask 50% of the checks.
+                <br><br>
+
+                This result is a promising step toward using masks to do quantum computation in 2D, but there is lots of work to do to 
+                figure out if the procedure as a whole is possible:
+                <ul>
+                    <li>How do you lay out the qubits of the code in 2D in an optimal way?</li>
+                    <li>How long does it take to physically measure the masked/unmasked checks?</li>
+                </ul>
+            </section>
+            <section class="step" id="the-end">
+                <h2>The End</h2>
+                <p>
+                Thanks for reading! Check out the paper <a href="">here</a> if you're interested in learning more.
+                </p>
+
+                <p>
+                Much of the scrollytelling boilerplate and styles came frome the great <a href="https://towardsdatascience.com/how-i-created-an-interactive-scrolling-visualisation-with-d3-js-and-how-you-can-too-e116372e2c73">tutorial</a> 
+                and <a href="https://cuthchow.github.io/college-majors-visualisation/">example</a>
+                by Cuthbert Chow.
+                </p>
+                <!-- <footer>
+                    <hr>
+                    <ol>
+                        <li id="footnote-1">
+                        <a href="#citation-1">[1]</a> <span class="footnote-text">M. Sipser and D. Spielman, Expander codes, IEEE 
+                            Transactions on Information Theory 42, 1710-1722 (1996).</span>
+                        </li>
+                    </ol>
+                </footer> -->
+                
+                <!-- <a href="#" class="back-to-top">Back to Top</a> -->
+                <hr>
+                Try out decoding a larger code. <br><br>
+                <div class="container">
+                    <button class="button" onclick="updateVariables(1)">$[[58,16,3]]$</button>
+                    <button class="button" onclick="updateVariables(2)">$[[225,9,4]]$</button>
+                </div>
+                <div class="container">
+                    <input type="text" id="error_p" placeholder="Error probability">
+                    <button class="button" onclick="randomError(0)">Generate random error</button>
+                </div>
+                <div class="container">
+                    <input type="text" id="mask_p" placeholder="Mask probability">
+                    <button class="button" onclick="randomMask(0)">Generate random mask</button>
+                </div>
+                <div class="container">
+                    <button class="button" onclick="randomError(1)">Clear error</button>
+                    <button class="button" onclick="randomMask(1)">Clear mask</button>
+
+                </div>
+                  
+            </section>
+        </div>
+        <div id="vis"></div>
+    </div>    
+
+    <script src="variables.js"></script>
+    <script src="decoder.js"></script>
+    <script src="scroller.js"></script>
+    <script src="sections.js"></script>
+
+</body>
+</html>

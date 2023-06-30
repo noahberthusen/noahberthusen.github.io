@@ -15,7 +15,7 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
 
-I'm a second year PhD student in computer science at the University of Maryland studying quantum computing and quantum error correction.
+I'm a third-year PhD student in computer science at the University of Maryland. I work with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
 
 I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
@@ -59,6 +59,13 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{masked,
+  author = {Noah Berthusen and Daniel Gottesman},
+  title = {Partial Syndrome Measurement for Hypergraph Product Codes},
+  biosite_url = {https://arxiv.org/abs/2306.17122},
+  biosite_demo = {https://noahberthusen.github.io/scroller}
+}
+
 @misc{rl,
   author = {M. Sohaib Alam and Noah F. Berthusen and Peter P. Orth},
   title = {Quantum Logic Gate Synthesis as a Markov Decision Process},
@@ -98,7 +105,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 @misc{qite,
   author = {Niladri Gomes and Feng Zhang and Noah F. Berthusen and Cai-Zhuang Wang and Kai-Ming Ho and Peter P. Orth and Yong-Xin Yao},
   title = {Efficient step-merged quantum imaginary time evolution algorithm for quantum chemistry},
-  biosite_url = {https://pubs.acs.org/doi/10.1021/acs.jctc.0c00666},
+  biosite_url = {https://arxiv.org/abs/2006.15371},
 }
 
 ```
