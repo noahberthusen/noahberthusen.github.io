@@ -5,11 +5,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
     </script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
     <title>Partial Syndrome Measurement for Hypergraph Product Codes</title>
 
 </head>
@@ -27,7 +35,7 @@
                 <h1>Partial Syndrome Measurement for Hypergraph Product Codes</h1>
                 <p>
                 This article is meant to be a less technical summary of my paper, 
-                <a href="" >Partial Syndrome Measurement for Hypergraph Product Codes</a>, as well as a cool visualization of decoders. 
+                <a href="https://arxiv.org/abs/2306.17122" >Partial Syndrome Measurement for Hypergraph Product Codes</a>, as well as a cool visualization of decoders. 
                 Skip to the <a href="#the-end">end</a> if you just want to play with the small-set flip decoder. <br><br>
                 
                 Before we introduce quantum error correction, let's start with some classical error correction. 
@@ -176,7 +184,7 @@
             <section class="step" id="the-end">
                 <h2>The End</h2>
                 <p>
-                Thanks for reading! Check out the paper <a href="">here</a> if you're interested in learning more.
+                Thanks for reading! Check out the paper <a href="https://arxiv.org/abs/2306.17122">here</a> if you're interested in learning more.
                 </p>
 
                 <p>
