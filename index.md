@@ -59,6 +59,14 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{bivariate,
+  author = {Noah Berthusen and Dhruv Devulapalli and Eddie Schoute and Andrew M. Childs and Michael J. Gullans and Alexey V. Gorshkov and Daniel Gottesman},
+  title = {Toward a 2D Local Implementation of Quantum LDPC Codes},
+  biosite_url = {https://arxiv.org/abs/2404.17676},
+  biosite_venue = {GitHub},
+  biosite_demo = {https://github.com/noahberthusen/qecc_routing}
+}
+
 @misc{masked,
   author = {Noah Berthusen and Daniel Gottesman},
   title = {Partial Syndrome Measurement for Hypergraph Product Codes},
@@ -114,6 +122,12 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 
 ```blog-bib
+
+@misc{qec,
+	biosite_extra = {October 2023. Contributed talk at QEC23},
+	title = {Partial Syndrome Measurement for Hypergraph Product Codes},
+	biosite_url = {https://www.youtube.com/watch?v=C2FptlwcKqI}
+}
 
 @misc{circuit_compression,
 	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. See also the companion paper <a href="https://noahberthusen.github.io/assets/files/circuit_compression.pdf">here</a>. },
