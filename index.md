@@ -13,13 +13,13 @@
 
 # Noah&nbsp;Berthusen
 
-<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot.jpg" alt="A photo of J. Doe" width="160" height="160" style="max-width: 160px;" /></figure>
+<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot2.jpg" alt="A photo of J. Doe" width="140" height="160" style="max-width: 160px;" /></figure>
 
-I'm a third-year PhD student in computer science at the University of Maryland. I work with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
+I'm a fourth-year PhD student in computer science at the University of Maryland. I work with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
 
 I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
 
-I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span> or on <a href="https://www.linkedin.com/in/noah-berthusen-1a141a129/">LinkedIn</a>.
+I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span> or on <a href="https://www.linkedin.com/in/noah-berthusen-1a141a129/">LinkedIn</a>. Also visit my <a href="https://github.com/noahberthusen">Github</a> to find code repositories for many of the projects below.
 
 ```bio-remove
 Below we use a simple mechanism to mitigate email address reaping.
@@ -59,12 +59,16 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{qccd,
+  author = {Noah Berthusen and Joan Dreiling and Cameron Foltz and John P. Gaebler and Thomas M. Gatterman and Dan Gresh and Nathan Hewitt and Michael Mills and Steven A. Moses and Brian Neyenhuis and Peter Siegfried and David Hayes},
+  title = {Experiments with the 4D Surface Code on a QCCD Quantum Computer},
+  biosite_url = {https://arxiv.org/abs/2408.08865}
+}
+
 @misc{bivariate,
   author = {Noah Berthusen and Dhruv Devulapalli and Eddie Schoute and Andrew M. Childs and Michael J. Gullans and Alexey V. Gorshkov and Daniel Gottesman},
   title = {Toward a 2D Local Implementation of Quantum LDPC Codes},
   biosite_url = {https://arxiv.org/abs/2404.17676},
-  biosite_venue = {GitHub},
-  biosite_demo = {https://github.com/noahberthusen/qecc_routing}
 }
 
 @misc{masked,
@@ -78,8 +82,6 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
   author = {M. Sohaib Alam and Noah F. Berthusen and Peter P. Orth},
   title = {Quantum Logic Gate Synthesis as a Markov Decision Process},
   biosite_url = {https://arxiv.org/abs/1912.12002},
-  biosite_venue = {GitHub},
-  biosite_demo = {https://github.com/Orth-Research/circuit_rl}
 }
 
 @misc{impurity,
@@ -92,16 +94,12 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
   author = {Noah F. Berthusen and Thaís V. Trevisan and Tom Iadecola and Peter P. Orth},
   title = {Quantum dynamics simulations beyond the coherence time on NISQ hardware by variational Trotter compression},
   biosite_url = {https://arxiv.org/abs/2112.12654},
-  bitsite_venue = {GitHub},
-  biosite_demo = {https://gitlab.com/QANED/heis_dynamics}
  }
 
 @misc{ml,
   author = {Noah F. Berthusen and Yuriy Sizyuk and Mathias S. Scheurer and Peter P. Orth},
   title = {Learning crystal field parameters using convolutional neural networks},
   biosite_url = {https://arxiv.org/abs/2011.12911},
-  biosite_venue = {GitHub},
-  biosite_demo = {https://github.com/Orth-Research/ml_cr}
 }
 
 @misc{vqe,
@@ -130,41 +128,35 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{circuit_compression,
-	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. See also the companion paper <a href="https://noahberthusen.github.io/assets/files/circuit_compression.pdf">here</a>. },
+	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. },
 	title = {Efficient quantum circuit compression using Reinforcement Learning},
-	biosite_venue = {GitHub},
-	biosite_demo = {https://github.com/noahberthusen/circuit_rl},
-	biosite_url = {https://noahberthusen.github.io/assets/files/rl_poster.pdf},
+<!--	biosite_url = {https://noahberthusen.github.io/assets/files/rl_poster.pdf}, -->
 }
 
 @misc{vqe-comparison,
 	biosite_extra = {April 2021. Poster presentation for National Conference on Undergraduate Research (NCUR).},
 	title = {Design of Quantum-classical Computing Hybrid Algorithms for Materials Simulation},
-	biosite_url = {https://noahberthusen.github.io/assets/files/VQE_comparison.pdf}
+<!--	biosite_url = {https://noahberthusen.github.io/assets/files/VQE_comparison.pdf} -->
 }
 
 
 @misc{vqe-talk,
   biosite_extra = {November 2020. Talk presented at Quantum computing reading group at ISU.},
   title = {Introduction to the variational quantum eigensolver method},
-  biosite_url = {https://noahberthusen.github.io/assets/files/VQE.pdf}
+<!--  biosite_url = {https://noahberthusen.github.io/assets/files/VQE.pdf} -->
 }
 
 @misc{benewop,
   biosite_extra = {August 2020. Oak Ridge National Lab SULI poster presentation.},
   title = {Benchmarking Noise Extrapolation on a Quantum Chip with OpenPulse},
-  biosite_url = {https://noahberthusen.github.io/assets/files/Poster_benewop.pdf},
-  biosite_venue = {GitHub},
-  biosite_demo = {https://github.com/noahberthusen/benewop-benchmarking}
+<!--  biosite_url = {https://noahberthusen.github.io/assets/files/Poster_benewop.pdf}, -->
 }
 
 @misc{ncur,
   biosite_extra = {April 2020. Oral presentation at Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research at the Montana State University, Bozeman, MT
  (cancelled due to Covid-19). },
   title = {Quantum variational algorithms apporach to solve the strongly correlated materials challenge},
-  biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632},
-  biosite_venue = {GitHub},
-  biosite_demo = {https://github.com/noahberthusen/qc_vqe}
+<!--  biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632}, -->
 }
 
 @misc{schrodinger,
