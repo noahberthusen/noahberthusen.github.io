@@ -59,6 +59,12 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{adaptive,
+  author = {Noah Berthusen and Shi Jie Samuel Tan and Eric Huang and Daniel Gottesman},
+  title = {Adaptive Syndrome Extraction},
+  biosite_url = {https://arxiv.org/abs/2502.14835}
+}
+
 @misc{qccd,
   author = {Noah Berthusen and Joan Dreiling and Cameron Foltz and John P. Gaebler and Thomas M. Gatterman and Dan Gresh and Nathan Hewitt and Michael Mills and Steven A. Moses and Brian Neyenhuis and Peter Siegfried and David Hayes},
   title = {Experiments with the 4D Surface Code on a QCCD Quantum Computer},
@@ -120,6 +126,11 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 
 ```blog-bib
+@misc{tqc2024,
+	biosite_extra = {September 2024. Contributed talk at TQC 2024},
+	title = {Toward a 2D Local Implementation of Quantum LDPC Codes},
+	biosite_url = {https://youtu.be/hBPJVG_iZLI?t=9147}
+}
 
 @misc{qec,
 	biosite_extra = {October 2023. Contributed talk at QEC23},
