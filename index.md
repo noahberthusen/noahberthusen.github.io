@@ -15,11 +15,11 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot2.jpg" alt="A photo of J. Doe" width="140" height="160" style="max-width: 160px;" /></figure>
 
-I'm a fourth-year PhD student in computer science at the University of Maryland. I work with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
+I am currently an Advanced Physicist at Quantinuum. I received a PhD in Computer Science from the University of Maryland in September 2025. I worked with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
 
-I received my undergraduate degree in Software Engineering at Iowa State University in May 2021.
+I received a Bachelor's degree in Software Engineering from Iowa State University in May 2021.
 
-I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span> or on <a href="https://www.linkedin.com/in/noah-berthusen-1a141a129/">LinkedIn</a>. Also visit my <a href="https://github.com/noahberthusen">Github</a> to find code repositories for many of the projects below.
+I can be reached at <span id="_eml" class="gl-eml">someone at example dot com</span> or on <a href="https://www.linkedin.com/in/noah-berthusen-1a141a129/">LinkedIn</a>. Also visit my <a href="https://github.com/noahberthusen">Github</a> to find code repositories for many of the projects below. A full list of publications can be found on my <a href="https://scholar.google.com/citations?user=QjupysQAAAAJ&hl=en">Google Scholar</a> page.
 
 ```bio-remove
 Below we use a simple mechanism to mitigate email address reaping.
@@ -59,6 +59,12 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{automorphisms,
+  author = {Noah Berthusen and Michael J. Gullans and Yifan Hong and Maryam Mudassar and Shi Jie Samuel Tan},
+  title = {Automorphism gadgets in homological product codes},
+  biosite_url = {https://arxiv.org/abs/2508.04794}
+}
+
 @misc{adaptive,
   author = {Noah Berthusen and Shi Jie Samuel Tan and Eric Huang and Daniel Gottesman},
   title = {Adaptive Syndrome Extraction},
@@ -90,42 +96,18 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
   biosite_url = {https://arxiv.org/abs/1912.12002},
 }
 
-@misc{impurity,
-  author = {Anirban Mukherjee and Noah F. Berthusen and João C. Getelina and Peter P. Orth and Yong-Xin Yao},
-  title = {Comparative study of adaptive variational quantum eigensolvers for multi-orbital impurity models},
-  biosite_url = {https://arxiv.org/abs/2203.06745}
-}
-
-@misc{vtc,
-  author = {Noah F. Berthusen and Thaís V. Trevisan and Tom Iadecola and Peter P. Orth},
-  title = {Quantum dynamics simulations beyond the coherence time on NISQ hardware by variational Trotter compression},
-  biosite_url = {https://arxiv.org/abs/2112.12654},
- }
-
-@misc{ml,
-  author = {Noah F. Berthusen and Yuriy Sizyuk and Mathias S. Scheurer and Peter P. Orth},
-  title = {Learning crystal field parameters using convolutional neural networks},
-  biosite_url = {https://arxiv.org/abs/2011.12911},
-}
-
-@misc{vqe,
-  author = {Feng Zhang and Niladri Gomes, and Noah F. Berthusen and Peter P. Orth and Cai-Zhuang Wang and Kai-Ming Ho, and Yong-Xin Yao},
-  title = {Shallow-circuit variational quantum eigensolver based on symmetry-inspired Hilbert space partitioning for quantum chemical calculations},
-  biosite_url = {https://arxiv.org/abs/2006.11213}
-}
-
-@misc{qite,
-  author = {Niladri Gomes and Feng Zhang and Noah F. Berthusen and Cai-Zhuang Wang and Kai-Ming Ho and Peter P. Orth and Yong-Xin Yao},
-  title = {Efficient step-merged quantum imaginary time evolution algorithm for quantum chemistry},
-  biosite_url = {https://arxiv.org/abs/2006.15371},
-}
-
 ```
 
 ## Talks and Presentations
 
 
 ```blog-bib
+@misc{
+	biosite_extra = {April 2025. Invited talk for Asia Pacific QEC Seminars},
+	title = {Adaptive Syndrome Extraction},
+	biosite_url = {https://www.youtube.com/watch?v=iwDiB81ZcBU}
+}
+
 @misc{tqc2024,
 	biosite_extra = {September 2024. Contributed talk at TQC 2024},
 	title = {Toward a 2D Local Implementation of Quantum LDPC Codes},
@@ -137,43 +119,5 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 	title = {Partial Syndrome Measurement for Hypergraph Product Codes},
 	biosite_url = {https://www.youtube.com/watch?v=C2FptlwcKqI}
 }
-
-@misc{circuit_compression,
-	biosite_extra = {May 2021. Iowa State Honors Project poster presentation. },
-	title = {Efficient quantum circuit compression using Reinforcement Learning},
-<!--	biosite_url = {https://noahberthusen.github.io/assets/files/rl_poster.pdf}, -->
-}
-
-@misc{vqe-comparison,
-	biosite_extra = {April 2021. Poster presentation for National Conference on Undergraduate Research (NCUR).},
-	title = {Design of Quantum-classical Computing Hybrid Algorithms for Materials Simulation},
-<!--	biosite_url = {https://noahberthusen.github.io/assets/files/VQE_comparison.pdf} -->
-}
-
-
-@misc{vqe-talk,
-  biosite_extra = {November 2020. Talk presented at Quantum computing reading group at ISU.},
-  title = {Introduction to the variational quantum eigensolver method},
-<!--  biosite_url = {https://noahberthusen.github.io/assets/files/VQE.pdf} -->
-}
-
-@misc{benewop,
-  biosite_extra = {August 2020. Oak Ridge National Lab SULI poster presentation.},
-  title = {Benchmarking Noise Extrapolation on a Quantum Chip with OpenPulse},
-<!--  biosite_url = {https://noahberthusen.github.io/assets/files/Poster_benewop.pdf}, -->
-}
-
-@misc{ncur,
-  biosite_extra = {April 2020. Oral presentation at Iowa State Symposium on Undergraduate Research. National Conference on Undergraduate Research at the Montana State University, Bozeman, MT
- (cancelled due to Covid-19). },
-  title = {Quantum variational algorithms apporach to solve the strongly correlated materials challenge},
-<!--  biosite_url = {https://iastate.app.box.com/s/crt2ntafxe7z9c2crrznurx2299ziad5/file/655919529632}, -->
-}
-
-@misc{schrodinger,
-  biosite_extra = {March 2018. Poster presented Iowa State Honors Research Symposium.},
-  title = {Machine Learning and the Schrödinger equation},
-}
-
 
 ```
