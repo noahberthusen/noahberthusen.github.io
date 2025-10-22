@@ -31,9 +31,7 @@ Change the encoding for your own email address.
 window.setTimeout(function ()
 {
 var addr = [
-  110, 102,  98, 101, 114,
-  116,  64, 117, 109, 100,
-   46, 101, 100, 117
+  110, 111, 97, 104, 46, 98, 101, 114, 116, 104, 117, 115, 101, 110, 64, 113, 117, 97, 110, 116, 105, 110, 117, 117, 109, 46, 99, 111, 109
 ];
 addr = String.fromCharCode.apply(String, addr);
 var eml = document.getElementById('_eml');
@@ -57,6 +55,12 @@ It is possible to have multiple BibTeX blocks, which will be rendered independen
 
 To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
+}
+
+@misc{concatenated,
+  author = {Noah Berthusen and Elijah Durso-Sabina},
+  title = {Simple logical quantum computation with concatenated symplectic double codes},
+  biosite_url = {https://arxiv.org/abs/2510.18753}
 }
 
 @misc{automorphisms,
@@ -103,7 +107,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 
 ```blog-bib
 @misc{
-	biosite_extra = {April 2025. Invited talk for Asia Pacific QEC Seminars},
+	biosite_extra = {April 2025. Invited talk for Asia Pacific QEC Seminars \n September 2025. Invited talk for HonHai (Foxconn) QC meeting},
 	title = {Adaptive Syndrome Extraction},
 	biosite_url = {https://www.youtube.com/watch?v=iwDiB81ZcBU}
 }
