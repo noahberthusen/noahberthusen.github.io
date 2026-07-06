@@ -13,7 +13,7 @@
 
 # Noah&nbsp;Berthusen
 
-<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot2.jpg" alt="A photo of J. Doe" width="140" height="160" style="max-width: 160px;" /></figure>
+<figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot2.jpg" alt="A photo of J. Doe" width="140" height="180" style="max-width: 160px;" /></figure>
 
 I am currently an Advanced Physicist at Quantinuum. I received a PhD in Computer Science from the University of Maryland in September 2025. I worked with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
 
@@ -55,6 +55,12 @@ It is possible to have multiple BibTeX blocks, which will be rendered independen
 
 To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
+}
+
+@misc{chain-map,
+  author = {Asmae Benhemou and Noah Berthusen},
+  title = {Automated logical Clifford gadgets for heterogeneous architectures via chain maps},
+  biosite_url = {https://arxiv.org/abs/2607.02482}
 }
 
 @misc{concatenated,
