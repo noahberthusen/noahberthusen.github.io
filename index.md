@@ -58,7 +58,7 @@ see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
 @misc{helix,
-  author = {Noah Berthusen and Ali Lavasani and Asmae Benhemou and M.S. Allman and Joan Dreiling and Brian Estey and Cameron Foltz and Trent Jacobs and Michael Mills and Annie Jihyun Park and Adam P. Reed and David Hayes and Tzvetan S. Metodi and Andrew C. Potter}
+  author = {Noah Berthusen and Ali Lavasani and Asmae Benhemou and M.S. Allman and Joan Dreiling and Brian Estey and Cameron Foltz and Trent Jacobs and Michael Mills and Annie Jihyun Park and Adam P. Reed and David Hayes and Tzvetan S. Metodi and Andrew C. Potter},
   title = {Experimental validation of a compact fault-tolerant architecture for trapped ions},
   biosite_url = {https://arxiv.org/abs/2609.03194}
 }
