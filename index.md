@@ -15,7 +15,7 @@
 
 <figure class="gl-page-background gl-float-right gl-image-box" style="text-align: center;"><img src="assets/images/headshot2.jpg" alt="A photo of J. Doe" width="140" height="180" style="max-width: 160px;" /></figure>
 
-I am currently an Advanced Physicist at Quantinuum. I received a PhD in Computer Science from the University of Maryland in September 2025. I worked with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a> on quantum error correction.
+I am currently an Quantum Error Correction researcher at Quantinuum. I received a PhD in Computer Science from the University of Maryland in September 2025. I worked with <a href="https://www2.perimeterinstitute.ca/personal/dgottesman/">Daniel Gottesman</a>.
 
 I received a Bachelor's degree in Software Engineering from Iowa State University in May 2021.
 
@@ -55,6 +55,12 @@ It is possible to have multiple BibTeX blocks, which will be rendered independen
 
 To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
+}
+
+@misc{helix,
+  author = {Noah Berthusen and Ali Lavasani and Asmae Benhemou and M.S. Allman and Joan Dreiling and Brian Estey and Cameron Foltz and Trent Jacobs and Michael Mills and Annie Jihyun Park and Adam P. Reed and David Hayes and Tzvetan S. Metodi and Andrew C. Potter}
+  title = {Experimental validation of a compact fault-tolerant architecture for trapped ions},
+  biosite_url = {https://arxiv.org/abs/2609.03194}
 }
 
 @misc{chain-map,
