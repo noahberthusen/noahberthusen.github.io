@@ -57,57 +57,63 @@ To support more information links (e.g., add "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 109.
 }
 
+@misc{color-code,
+  author = {Ali Lavasani and Adam P. Reed and Joan M. Dreiling and Annie J. Park and Michael Mills and Matteo Puviani and Gabriel Matos and M.S. Allman and {\textbf{Noah Berthusen}} and Natalie C. Brown and Victor E. Colussi and Brian Estey and Cameron Foltz and Daniel Gresh and Reza Haghshenas and Akhil Isanaka and Nikhil Kotibhaskar and Anthony Ransford and Ciar{\'a}n {Ryan-Anderson} and Brian Neyenhuis and David Hayes and Tzvetan S. Metodi and Andrew C. Potter},
+  title = {Quantum error correction well below the color code threshold},
+  biosite_url = {https://arxiv.org/abs/2610.24077}
+}
+
 @misc{helix,
-  author = {Noah Berthusen and Ali Lavasani and Asmae Benhemou and M.S. Allman and Joan Dreiling and Brian Estey and Cameron Foltz and Trent Jacobs and Michael Mills and Annie Jihyun Park and Adam P. Reed and David Hayes and Tzvetan S. Metodi and Andrew C. Potter},
+  author = {{\textbf{Noah Berthusen}} and Ali Lavasani and Asmae Benhemou and M.S. Allman and Joan Dreiling and Brian Estey and Cameron Foltz and Trent Jacobs and Michael Mills and Annie Jihyun Park and Adam P. Reed and David Hayes and Tzvetan S. Metodi and Andrew C. Potter},
   title = {Experimental validation of a compact fault-tolerant architecture for trapped ions},
   biosite_url = {https://arxiv.org/abs/2609.03194}
 }
 
 @misc{chain-map,
-  author = {Asmae Benhemou and Noah Berthusen},
+  author = {Asmae Benhemou and {\textbf{Noah Berthusen}}},
   title = {Automated logical Clifford gadgets for heterogeneous architectures via chain maps},
   biosite_url = {https://arxiv.org/abs/2607.02482}
 }
 
 @misc{concatenated,
-  author = {Noah Berthusen and Elijah Durso-Sabina},
+  author = {{\textbf{Noah Berthusen}} and Elijah {Durso-Sabina}},
   title = {Simple logical quantum computation with concatenated symplectic double codes},
   biosite_url = {https://arxiv.org/abs/2510.18753}
 }
 
 @misc{automorphisms,
-  author = {Noah Berthusen and Michael J. Gullans and Yifan Hong and Maryam Mudassar and Shi Jie Samuel Tan},
+  author = {{\textbf{Noah Berthusen}} and Michael J. Gullans and Yifan Hong and Maryam Mudassar and Shi Jie Samuel Tan},
   title = {Automorphism gadgets in homological product codes},
   biosite_url = {https://arxiv.org/abs/2508.04794}
 }
 
 @misc{adaptive,
-  author = {Noah Berthusen and Shi Jie Samuel Tan and Eric Huang and Daniel Gottesman},
+  author = {{\textbf{Noah Berthusen}} and Shi Jie Samuel Tan and Eric Huang and Daniel Gottesman},
   title = {Adaptive Syndrome Extraction},
   biosite_url = {https://arxiv.org/abs/2502.14835}
 }
 
 @misc{qccd,
-  author = {Noah Berthusen and Joan Dreiling and Cameron Foltz and John P. Gaebler and Thomas M. Gatterman and Dan Gresh and Nathan Hewitt and Michael Mills and Steven A. Moses and Brian Neyenhuis and Peter Siegfried and David Hayes},
+  author = {{\textbf{Noah Berthusen}} and Joan Dreiling and Cameron Foltz and John P. Gaebler and Thomas M. Gatterman and Dan Gresh and Nathan Hewitt and Michael Mills and Steven A. Moses and Brian Neyenhuis and Peter Siegfried and David Hayes},
   title = {Experiments with the 4D Surface Code on a QCCD Quantum Computer},
   biosite_url = {https://arxiv.org/abs/2408.08865}
 }
 
 @misc{bivariate,
-  author = {Noah Berthusen and Dhruv Devulapalli and Eddie Schoute and Andrew M. Childs and Michael J. Gullans and Alexey V. Gorshkov and Daniel Gottesman},
+  author = {{\textbf{Noah Berthusen}} and Dhruv Devulapalli and Eddie Schoute and Andrew M. Childs and Michael J. Gullans and Alexey V. Gorshkov and Daniel Gottesman},
   title = {Toward a 2D Local Implementation of Quantum LDPC Codes},
   biosite_url = {https://arxiv.org/abs/2404.17676},
 }
 
 @misc{masked,
-  author = {Noah Berthusen and Daniel Gottesman},
+  author = {{\textbf{Noah Berthusen}} and Daniel Gottesman},
   title = {Partial Syndrome Measurement for Hypergraph Product Codes},
   biosite_url = {https://arxiv.org/abs/2306.17122},
   biosite_demo = {https://noahberthusen.github.io/scroller}
 }
 
 @misc{rl,
-  author = {M. Sohaib Alam and Noah F. Berthusen and Peter P. Orth},
+  author = {M. Sohaib Alam and {\textbf{Noah~F. Berthusen}} and Peter P. Orth},
   title = {Quantum Logic Gate Synthesis as a Markov Decision Process},
   biosite_url = {https://arxiv.org/abs/1912.12002},
 }
